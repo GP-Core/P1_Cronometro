@@ -29,7 +29,7 @@ namespace P1_Cronometro
         {
 
             seg++;
-            lblCronometro.Text = hor.ToString("D2") + ":" + min.ToString("D2") + ":" + seg.ToString("D2");
+            
             if (seg == 60)
             {
                 seg = 0;
@@ -41,7 +41,7 @@ namespace P1_Cronometro
                 hor++;
 
             }
-
+            lblCronometro.Text = hor.ToString("D2") + ":" + min.ToString("D2") + ":" + seg.ToString("D2");
 
         }
 
